@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh_En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+    * match:正则去匹配字符串，如果匹配成功，就返回匹配成功的数组，如果匹配不成功，就返回null
+    * match的写法 :字符串.match(正则)
+    * 正则默认匹配成功就会结束，不会继续匹配
+    * */
+    var str='haj123sdk54sdsds33ffdfsd879';
+    var re=/\d+/g;
+    alert(str.match(re));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh_EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+
+<script>
+    var str='haj123sdk54sdsds33ffdfsd879';
+    function findNum(str){
+        var arr=[];
+        var tem=''
+        for(var i=0;i<str.length;i++){
+            if(str.charAt(i)<='9'&&str.charAt(i)>'0'){
+                tem+=str.charAt(i);
+
+            }else{
+                if(tem){
+                    arr.push(tem);
+                    tem='';
+                }
+
+
+            }
+
+            if(tem){
+                arr.push(tem);
+                tem='';
+            }
+
+        }
+        return arr;
+    }
+    alert(findNum(str))
+</script>
+
+</body>
+</html>

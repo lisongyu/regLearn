@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh_EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>replace敏感词过滤</title>
+</head>
+
+替换前<br/>
+<textarea name="" id="" cols="30" rows="10"></textarea><br/>
+替换后<br/>
+<textarea name="" id="" cols="30" rows="10"></textarea>
+
+<input type="button" id="input1" value="确定">
+
+<script>
+    /*
+    * replace:正则去匹配字符串，匹配成功的字符串去替换成新的字符串
+    * replace的写法：字符串.replace(正则,新的字符串)
+    *
+    * ｜ :或的意思
+    * */
+
+    //菲称人爱附近17艘中国船均在菲军监视之下
+
+
+
+    window.onload=function(){
+        var aT=document.getElementsByTagName('textarea');
+        var oInput=document.getElementById('input1');
+
+        var re=/菲称|中国船|监视之下/g;
+        oInput.onclick=function(){
+            aT[1].value=aT[0].value.replace(re,'*');
+        }
+    }
+</script>
+
+</body>
+</html>
